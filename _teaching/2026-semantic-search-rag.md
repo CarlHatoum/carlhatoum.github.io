@@ -10,6 +10,8 @@ location: "France"
 
 A graduate-level course covering the full stack of modern semantic search and Retrieval-Augmented Generation (RAG), from foundational concepts to production-grade multimodal systems.
 
+[Download slides (PDF)](/files/cours_semantic_search_rag.pdf)
+
 ## Course Overview
 
 The course is organized into three pillars:
