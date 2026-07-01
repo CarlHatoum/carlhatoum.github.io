@@ -1,13 +1,8 @@
 ---
 title: "CleanNote: Structuring Raw Clinical Notes with a Local LLM"
-date: 2025-07-01
-permalink: /posts/2025/07/cleannote-medical-nlp/
-tags:
-  - NLP
-  - healthcare
-  - LLM
-  - information extraction
-  - open source
+date: 2025-07-01 00:00:00 +0200
+categories: [Writing]
+tags: [nlp, healthcare, llm, information-extraction, open-source]
 ---
 
 Clinical notes are among the richest — and messiest — sources of medical information. A physician writes what they observe, conclude, and prescribe, but in free text: abbreviations, fragments, mixed languages, no fixed structure. This makes clinical notes extremely hard to use at scale for research or analysis.
