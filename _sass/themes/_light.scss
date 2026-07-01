@@ -1,8 +1,8 @@
 @mixin styles {
   /* framework */
-  --main-bg: white;
+  --main-bg: #faf9f7;               /* warm off-white — was white */
   --mask-bg: #c1c3c5;
-  --main-border-color: #f3f3f3;
+  --main-border-color: #f0ece8;
 
   /* common */
   --text-color: #34343c;
@@ -29,7 +29,7 @@
   --menu-highlight-bg: rgb(243 244 245 / 50%);
 
   /* sidebar — dark panel */
-  --site-title-color: rgb(220 225 225);
+  --site-title-color: #d4875c;      /* terracotta — your name pops on dark bg */
   --site-subtitle-color: #8fa8ad;
   --sidebar-bg: #1e2a2e;
   --sidebar-border-color: #2d3f45;
@@ -61,8 +61,8 @@
   --btn-share-hover-color: #2b7a8e; /* match accent — was #0d6efd */
 
   /* cards */
-  --card-bg: white;
-  --card-hover-bg: #e2e2e2;
+  --card-bg: #faf9f7;
+  --card-hover-bg: #f0ece8;
   --footnote-target-bg: lightcyan;
 
   /* tables */
@@ -86,11 +86,11 @@
   --prompt-danger-bg: rgb(248 215 218 / 56%);
   --prompt-danger-icon-color: #df3c30;
 
-  /* tags */
-  --tag-border: #dee2e6;
-  --tag-shadow: var(--btn-border-color);
-  --tag-hover: rgb(222 226 230);
-  --search-tag-bg: #f8f9fa;
+  /* tags — warm accent */
+  --tag-border: #e8c8b8;
+  --tag-shadow: #f0ddd4;
+  --tag-hover: #f0ddd4;
+  --search-tag-bg: #fdf6f3;
 
   /* categories */
   --categories-border: rgb(0 0 0 / 12.5%);
