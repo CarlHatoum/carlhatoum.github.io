@@ -1,0 +1,34 @@
+/* Fonts */
+$font-family-base: 'Lora', Georgia, serif;
+$font-family-heading: 'Lora', Georgia, serif;
+
+/* Code */
+$code-font-size: 0.85rem;
+
+/* Layout */
+$sidebar-width: 260px;
+$sidebar-width-large: 300px;
+$sb-btn-gap: 0.8rem;
+$sb-btn-gap-lg: 1rem;
+$topbar-height: 3rem;
+$footer-height: 5rem;
+$footer-height-large: 6rem;
+$main-content-max-width: 1250px;
+$search-max-width: 200px;
+
+/* Code block */
+$code-header-height: 2.25rem;
+$code-dot-size: 0.75rem;
+$code-dot-gap: 0.5rem;
+$code-icon-width: 1.75rem;
+
+/* Border radius */
+$radius-sm: 6px;
+$radius-lg: 10px;
+
+/* Back to top */
+$back2top-size: 2.75rem;
+
+/* Theme */
+$theme-attr: 'data-bs-theme';
+$theme-options: light, dark;

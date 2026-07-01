@@ -12,6 +12,14 @@ permalink: /publications/
 
 ### 2025
 
+**Clustering de résumés LLM guidés par l'utilisateur : vers une approche constructiviste et réaliste unifiée**  
+Hatoum, C., Combes, C., Fresse, V., Gravier, C., & Orzalesi, M.  
+*CORIA 2025 — JEP/TALN/RECITAL, Marseille. Pages 82–95.*  
+Hybrid framework combining LLMs and clustering for knowledge extraction from large text collections. Uses semantic entropy to select prompting strategies, validates summaries via factual evaluation, then clusters thematically. Validated on aviation incident data.  
+[PDF](https://aclanthology.org/2025.jeptalnrecital-coria.7.pdf) · [ACL Anthology](https://aclanthology.org/2025.jeptalnrecital-coria.7/)
+
+---
+
 **Identification de profils patients à partir de notes cliniques non structurées**  
 Laval, C., Combes, C., Eyraud, R., & Fresse, V.  
 *PFIA 2025 — Plate-Forme Intelligence Artificielle*  
