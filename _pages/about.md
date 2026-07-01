@@ -8,29 +8,20 @@ redirect_from:
   - /about.html
 ---
 
-I am an AI & Data Scientist and PhD candidate specializing in **Machine Learning**, **Natural Language Processing**, and **Information Retrieval**. I currently work at **SEGULA Technologies** in France, where I apply AI to real-world engineering and industrial challenges.
+I'm a PhD candidate at [Université Jean Monnet Saint-Étienne](https://www.univ-st-etienne.fr), where my thesis — *Knowledge Extraction for Industry: A Representation-Driven Topic Modeling Approach* — tries to answer a question that feels both practical and genuinely hard: how do you extract meaningful knowledge from the kind of messy, heterogeneous document collections that real industrial organizations actually have?
 
-My research and applied work sits at the intersection of **semantic search** and **generative AI** — building systems that retrieve, reason over, and generate grounded answers from large document corpora. I have deep expertise in:
+In parallel, I work as an AI & Data Scientist at [SEGULA Technologies](https://www.segula.fr), where I lead the development of **EvidenceExplorer** — a multimodal platform for document exploration and traceable knowledge synthesis across thousands of technical reports, maintenance records, and regulatory documents. The applied side keeps the research honest.
 
-- **Dense retrieval** — embedding models (SBERT, E5, BGE-M3, CLIP), vector databases (Qdrant, FAISS, Pinecone), and approximate nearest neighbor search (HNSW, IVF)
-- **RAG pipelines** — hybrid retrieval (BM25 + dense), cross-encoder reranking, faithfulness evaluation with RAGAS
-- **Multimodal AI** — joint text/image search with CLIP and SigLIP, multimodal document understanding
-- **LLM integration** — prompt engineering, tool use, agentic retrieval
+Before this, I worked on physiological time series at [Biosency](https://www.biosency.com) — blood pressure, oxygen saturation, respiratory failure monitoring — and on spatial analysis of tumor tissue at [EPFL](https://www.epfl.ch), where I co-authored work on predicting immunotherapy response from the spatial organization of immune cells in tumors. Different domains, but the same underlying question: what can you reliably extract from data that wasn't designed to be easy to analyze?
 
-Beyond research, I enjoy sharing knowledge. I teach graduate-level courses on **Semantic Search and Retrieval-Augmented Generation**, covering topics from word embeddings and transformer architectures to production-grade RAG systems and multimodal retrieval.
+I've published at EANN, ISMIS, and CORIA. I also teach graduate courses on semantic search and retrieval-augmented generation at Télécom Saint-Étienne.
 
-## Research Interests
+---
 
-- Retrieval-Augmented Generation (RAG) & Agentic RAG
-- Dense and hybrid information retrieval
-- Natural Language Processing & text representation learning
-- Multimodal understanding (text + vision)
-- Evaluation frameworks for generative systems
+Application domains: **Industry · Aeronautics · Health**
 
-## Skills
+---
 
-**Languages & Frameworks:** Python, MATLAB, R, JavaScript  
-**ML / NLP:** PyTorch, Hugging Face Transformers, Sentence-BERT, LangChain, RAGAS  
-**Vector Search:** Qdrant, FAISS, Pinecone, Chroma, Weaviate  
-**Multimodal:** CLIP, SigLIP, BLIP-2  
-**Data & Viz:** pandas, scikit-learn, matplotlib, R  
+## Contact
+
+[carlhatoum@gmail.com](mailto:carlhatoum@gmail.com)
