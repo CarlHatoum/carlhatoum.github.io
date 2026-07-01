@@ -1,34 +1,37 @@
-/* Fonts */
-$font-family-base: 'Lora', Georgia, serif;
-$font-family-heading: 'Lora', Georgia, serif;
+/* Required by gem's @use configuration */
+$theme: '' !default;
+
+/* Fonts — overriding Chirpy defaults */
+$font-family-base: 'Lora', Georgia, serif !default;
+$font-family-heading: 'Lora', Georgia, serif !default;
 
 /* Code */
-$code-font-size: 0.85rem;
+$code-font-size: 0.85rem !default;
 
 /* Layout */
-$sidebar-width: 260px;
-$sidebar-width-large: 300px;
-$sb-btn-gap: 0.8rem;
-$sb-btn-gap-lg: 1rem;
-$topbar-height: 3rem;
-$footer-height: 5rem;
-$footer-height-large: 6rem;
-$main-content-max-width: 1250px;
-$search-max-width: 200px;
+$sidebar-width: 260px !default;
+$sidebar-width-large: 300px !default;
+$sb-btn-gap: 0.8rem !default;
+$sb-btn-gap-lg: 1rem !default;
+$topbar-height: 3rem !default;
+$footer-height: 5rem !default;
+$footer-height-large: 6rem !default;
+$main-content-max-width: 1250px !default;
+$search-max-width: 200px !default;
 
 /* Code block */
-$code-header-height: 2.25rem;
-$code-dot-size: 0.75rem;
-$code-dot-gap: 0.5rem;
-$code-icon-width: 1.75rem;
+$code-header-height: 2.25rem !default;
+$code-dot-size: 0.75rem !default;
+$code-dot-gap: 0.5rem !default;
+$code-icon-width: 1.75rem !default;
 
 /* Border radius */
-$radius-sm: 6px;
-$radius-lg: 10px;
+$radius-sm: 6px !default;
+$radius-lg: 10px !default;
 
 /* Back to top */
-$back2top-size: 2.75rem;
+$back2top-size: 2.75rem !default;
 
 /* Theme */
-$theme-attr: 'data-bs-theme';
-$theme-options: light, dark;
+$theme-attr: 'data-bs-theme' !default;
+$theme-options: light, dark !default;
