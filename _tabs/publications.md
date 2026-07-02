@@ -2,7 +2,7 @@
 layout: page
 title: Publications
 icon: fas fa-book
-order: 2
+order: 3
 permalink: /publications/
 ---
 

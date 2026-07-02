@@ -2,7 +2,7 @@
 layout: page
 title: CV
 icon: fas fa-file-alt
-order: 4
+order: 5
 permalink: /cv/
 ---
 

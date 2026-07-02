@@ -2,7 +2,7 @@
 layout: page
 title: Personal
 icon: fas fa-user
-order: 5
+order: 6
 permalink: /personal/
 ---
 
