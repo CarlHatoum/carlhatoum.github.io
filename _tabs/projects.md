@@ -6,7 +6,14 @@ order: 4
 permalink: /projects/
 ---
 
-A mix of research prototypes, open-source tools, and side experiments.
+A mix of research platforms, open-source tools, and side experiments.
+
+---
+
+### EvidenceExplorer *(SEGULA Technologies, 2023 – present)*
+Multimodal platform for document exploration and traceable knowledge synthesis, built for industrial environments. Processes thousands of technical reports, maintenance records, and regulatory documents — combining unsupervised learning, information retrieval, and summarization to help engineers and analysts extract structured knowledge from unstructured corpora.
+
+Application domains: aeronautics, automotive, energy. Built as part of my PhD research at SEGULA.
 
 ---
 
@@ -17,7 +24,7 @@ NLP pipeline that transforms raw clinical notes into structured JSON documents �
 pip install -U cleanote
 ```
 
-[GitHub](https://github.com/CarlHatoum/CleanNote) · [PyPI](https://pypi.org/project/cleanote/) · [Write-up](/posts/2025/07/cleannote-medical-nlp/)
+[GitHub](https://github.com/CarlHatoum/CleanNote) · [PyPI](https://pypi.org/project/cleanote/) · [Write-up](/writing/2025/07/01/cleannote-medical-nlp.html)
 
 ---
 

@@ -39,6 +39,7 @@ comments:
   provider: false
 
 paginate: 10
+paginate_path: /page:num/
 
 kramdown:
   footnote_backlink: "&#8617;&#xfe0e;"
