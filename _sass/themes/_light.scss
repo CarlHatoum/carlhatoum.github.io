@@ -10,16 +10,16 @@
   --text-muted-highlight-color: inherit;
   --heading-color: #1e2a2e;
   --label-color: #585858;
-  --blockquote-border-color: #d4875c;  /* terracotta */
+  --blockquote-border-color: #c47245;  /* terracotta */
   --blockquote-text-color: #5a5a5a;
-  --link-color: #b85a25;            /* dark terracotta */
+  --link-color: #a85428;            /* dark terracotta */
   --link-underline-color: #dee2e6;
   --button-bg: #ffffff;
   --btn-border-color: #e9ecef;
   --btn-backtotop-color: #686868;
   --btn-backtotop-border-color: #f1f1f1;
   --checkbox-color: #c5c5c5;
-  --checkbox-checked-color: #b85a25;
+  --checkbox-checked-color: #a85428;
 
   /* menu */
   --menu-bg: white;
@@ -29,7 +29,7 @@
   --menu-highlight-bg: rgb(243 244 245 / 50%);
 
   /* sidebar — dark panel */
-  --site-title-color: #d4875c;      /* terracotta — your name pops on dark bg */
+  --site-title-color: #c47245;      /* terracotta — your name pops on dark bg */
   --site-subtitle-color: #8fa8ad;
   --sidebar-bg: #1e2a2e;
   --sidebar-border-color: #2d3f45;
@@ -53,12 +53,12 @@
   --btn-paginator-hover-color: var(--sidebar-bg);
 
   /* TOC */
-  --toc-highlight: #d4875c;
+  --toc-highlight: #c47245;
   --toc-popup-border-color: lightgray;
 
   /* share buttons */
   --btn-share-color: gray;
-  --btn-share-hover-color: #b85a25;
+  --btn-share-hover-color: #a85428;
 
   /* cards */
   --card-bg: #faf9f7;
@@ -98,8 +98,8 @@
   --categories-icon-hover-color: darkslategray;
 
   /* timeline */
-  --timeline-color: rgb(212 135 92 / 25%);
-  --timeline-node-bg: #d4875c;
+  --timeline-color: rgb(196 114 69 / 25%);
+  --timeline-node-bg: #c47245;
   --timeline-year-dot-color: #ffffff;
 
   /* code */

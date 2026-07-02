@@ -1,22 +1,45 @@
 /* Terracotta left-border accent on h2 in content */
 main h2 {
-  border-left: 3px solid #d4875c;
+  border-left: 3px solid #c47245;
   padding-left: 0.65rem;
   margin-left: -0.65rem;
 }
 
 /* Terracotta h3 */
 main h3 {
-  color: #d4875c;
+  color: #c47245;
 }
 
 /* Tags */
 a.post-tag {
-  color: #b85a25 !important;
+  color: #a85428 !important;
 }
 
 /* Post list category links */
 .categories a,
 .post-preview .categories a {
-  color: #b85a25;
+  color: #a85428;
+}
+
+/* Breathing room */
+main p,
+.post-content p {
+  line-height: 1.9;
+  margin-bottom: 1.3rem;
+}
+
+main h2,
+.post-content h2 {
+  margin-top: 2.8rem;
+}
+
+main h3,
+.post-content h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+hr {
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
 }
