@@ -1,0 +1,10 @@
+{
+  "name": "Carl Hatoum",
+  "short_name": "CH",
+  "icons": [
+    { "src": "/assets/img/favicons/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ],
+  "theme_color": "#1e2a2e",
+  "background_color": "#faf9f7",
+  "display": "standalone"
+}

@@ -23,8 +23,7 @@ Co-author: *Spatial Organization of Immune Cells in Tumor and Microenvironment P
 ## Experience
 
 **AI & Data Scientist — SEGULA Technologies** *(2023 – present)*
-- Lead development of EvidenceExplorer, a multimodal platform for document exploration and traceable knowledge synthesis for industry
-- Knowledge extraction methods combining unsupervised learning, Information Retrieval, and summarization on thousands of technical documents, maintenance reports, and regulatory records
+- Knowledge extraction from large industrial document collections — retrieval, clustering, and summarization at scale
 - Evaluation protocols and decision-support tools for engineers and analysts
 - Application domains: Industry, Aeronautics, Health
 
@@ -36,8 +35,7 @@ Co-author: *Spatial Organization of Immune Cells in Tumor and Microenvironment P
 - Software development for electric mobility infrastructure
 
 **R&D Engineer — Biosency** *(2021)*
-- Analysis of physiological time series (blood pressure, O₂ saturation) for respiratory failure monitoring
-- Feature engineering and classification models for patient profiling
+- Physiological time series analysis for respiratory failure monitoring
 
 **Project Manager — ETIC INSA Technologies** *(2019 – 2020)*
 - Led multidisciplinary engineering projects from planning to delivery

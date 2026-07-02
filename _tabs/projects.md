@@ -10,13 +10,6 @@ A mix of research platforms, open-source tools, and side experiments.
 
 ---
 
-### EvidenceExplorer *(SEGULA Technologies, 2023 – present)*
-Multimodal platform for document exploration and traceable knowledge synthesis, built for industrial environments. Processes thousands of technical reports, maintenance records, and regulatory documents — combining unsupervised learning, information retrieval, and summarization to help engineers and analysts extract structured knowledge from unstructured corpora.
-
-Application domains: aeronautics, automotive, energy. Built as part of my PhD research at SEGULA.
-
----
-
 ### [CleanNote](https://github.com/CarlHatoum/CleanNote)
 NLP pipeline that transforms raw clinical notes into structured JSON documents — symptoms, medical conclusions, treatments — using a local LLM (Mistral-7B-Instruct). Built during a research internship at the Hubert Curien Laboratory. Published at PFIA 2025 and available as an open-source Python package.
 

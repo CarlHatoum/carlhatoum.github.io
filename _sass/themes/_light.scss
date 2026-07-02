@@ -12,14 +12,14 @@
   --label-color: #585858;
   --blockquote-border-color: #d4875c;  /* terracotta */
   --blockquote-text-color: #5a5a5a;
-  --link-color: #2b7a8e;            /* teal accent — was #0056b2 */
+  --link-color: #b85a25;            /* dark terracotta */
   --link-underline-color: #dee2e6;
   --button-bg: #ffffff;
   --btn-border-color: #e9ecef;
   --btn-backtotop-color: #686868;
   --btn-backtotop-border-color: #f1f1f1;
   --checkbox-color: #c5c5c5;
-  --checkbox-checked-color: #2b7a8e; /* match accent */
+  --checkbox-checked-color: #b85a25;
 
   /* menu */
   --menu-bg: white;
@@ -53,12 +53,12 @@
   --btn-paginator-hover-color: var(--sidebar-bg);
 
   /* TOC */
-  --toc-highlight: #2b7a8e;         /* match accent — was #0550ae */
+  --toc-highlight: #d4875c;
   --toc-popup-border-color: lightgray;
 
   /* share buttons */
   --btn-share-color: gray;
-  --btn-share-hover-color: #2b7a8e; /* match accent — was #0d6efd */
+  --btn-share-hover-color: #b85a25;
 
   /* cards */
   --card-bg: #faf9f7;
@@ -86,11 +86,11 @@
   --prompt-danger-bg: rgb(248 215 218 / 56%);
   --prompt-danger-icon-color: #df3c30;
 
-  /* tags — teal accent */
-  --tag-border: #c9e0e6;
-  --tag-shadow: #dff0f4;
-  --tag-hover: #dff0f4;
-  --search-tag-bg: #f0f8fa;
+  /* tags — terracotta accent */
+  --tag-border: #e8c8b8;
+  --tag-shadow: #f0ddd4;
+  --tag-hover: #f0ddd4;
+  --search-tag-bg: #fdf6f3;
 
   /* categories */
   --categories-border: rgb(0 0 0 / 12.5%);
@@ -98,8 +98,8 @@
   --categories-icon-hover-color: darkslategray;
 
   /* timeline */
-  --timeline-color: rgb(43 122 142 / 20%);  /* teal */
-  --timeline-node-bg: #2b7a8e;
+  --timeline-color: rgb(212 135 92 / 25%);
+  --timeline-node-bg: #d4875c;
   --timeline-year-dot-color: #ffffff;
 
   /* code */
