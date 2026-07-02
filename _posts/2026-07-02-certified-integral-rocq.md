@@ -1,16 +1,16 @@
 ---
-title: "An Integral That Floating Point Gets Wrong"
+title: "An LLM, Rocq, and an Integral Mathematica Gets Wrong"
 date: 2026-07-02 00:00:00 +0200
 tags: [formal-methods, rocq, numerical-analysis, llm, proof-assistant, mathematics]
 math: true
-description: "Notes from Théo Stoskopf's workshop at the AI, Proof and Formalization Days: a narrow integral that floating-point quadrature misses, certified by Rocq's Interval tactic, resolved in closed form, with an LLM-assisted proof workflow built on semantic retrieval."
+description: "An LLM proposes proof steps, a retrieval engine finds relevant lemmas, and Rocq's kernel decides what counts as valid. Notes from Théo Stoskopf's workshop at the AI, Proof and Formalization Days — using LLM-assisted formal verification on an integral that floating-point tools consistently get wrong."
 ---
 
-There is an integral that Mathematica gets wrong. Not by a rounding error — by about 0.5%, consistently, for a reason that is easy to miss and interesting to think about.
+The setup: an LLM proposes proof steps, a semantic retrieval engine finds relevant lemmas from a formal library, and Rocq's kernel decides what is and isn't a valid proof. The LLM is not trusted — it is just a fast source of candidate scripts. Rocq is the only authority.
 
 This post is a write-up of a workshop I attended at the **[AI, Proof and Formalization Days](https://www.ens-lyon.fr/evenement/recherche/ia-and-mathematics-days-ai-proof-and-formalization-days-workshop-mathematical)** (Journées IA, Démonstration et Formalisation), designed and led by [Théo Stoskopf](https://theostoskopf.github.io/). All formal ideas and workshop materials are his — I am only writing up what I found most interesting about working through them.
 
-The workshop is about certifying a specific integral in [Rocq](https://rocq-prover.org/) (formerly Coq), finding its closed form analytically, and — the part I find most interesting — the proof workflow that made the formal verification tractable: semantic retrieval over a library of Rocq lemmas, an LLM that proposes proof steps, and Rocq's kernel as the only trusted oracle.
+The vehicle is a specific integral that Mathematica gets wrong — not by a rounding error, but by about 0.5%, consistently, for a reason that is easy to miss and interesting to think about. The goal is to certify it in [Rocq](https://rocq-prover.org/) (formerly Coq) and then prove its analytic closed form, with the LLM doing most of the proof assembly and Rocq checking every accepted step.
 
 ---
 
@@ -104,7 +104,9 @@ This is a stable computation. No adaptive sampling, no narrow peaks to miss — 
 
 ## Proving the Antiderivative Formally
 
-The interesting part is formalizing the analytic proof in Rocq — specifically, proving that $F$ is an antiderivative of $f$ and applying the fundamental theorem of calculus.
+This is where the LLM does its work. Each lemma below was assembled by the model from the current proof state and a small set of retrieved library facts — Rocq's kernel accepted or rejected every step.
+
+The structure is: proving that $F$ is an antiderivative of $f$, then applying the fundamental theorem of calculus.
 
 The proof has a predictable structure:
 
@@ -113,6 +115,8 @@ The proof has a predictable structure:
 3. `F_derivative`: derivative of $F = F_2 + F_4 + F_6$ is $f$ (by `is_derive_plus`)
 4. `f_continuous`: $f$ is continuous (required by the FTC)
 5. `I_closed_form_correct`: $I = F(1) - F(0)$ (by `is_RInt_derive` + `is_RInt_unique`)
+
+![Proof dependency tree: I_closed_form_correct at the root, F_derivative and f_continuous as its two obligations, the three derivative lemmas below, and sech_denominator_nonzero / exp_plus / auto_derive at the leaves](/assets/img/posts/rocq-proof-tree.png)
 
 Each derivative lemma follows the same template. The `auto_derive` tactic (from Coquelicot) handles differentiability and leaves behind equational side conditions. These require `exp_plus` to rewrite doubled arguments (Rocq's `exp (2*u)` needs to become `exp(u) * exp(u)` to match the sech definition), then `field` and `nra` for the arithmetic. The only recurring annoyance is the denominator: you need to prove `exp(u) + 1 ≠ 0` in several places. The right move is to prove it once as a reusable lemma:
 
@@ -129,9 +133,11 @@ Three lines. Then every derivative proof can reference it directly.
 
 ---
 
-## The Retrieval-LLM Proof Workflow
+## The LLM Proof Workflow
 
-Assembling these proofs by hand is tedious but not hard. The more interesting question is whether an LLM can assemble them from a description of the goal and a small set of relevant lemmas.
+The proofs above were not written by hand. The LLM assembled them — tactic by tactic, lemma by lemma — from a description of the proof goal and a small set of retrieved library facts. The interesting question is not whether it can do this at all, but *how* you structure the interaction to make it reliable.
+
+![The Retrieve → LLM → Rocq pipeline, with a reject → refine feedback loop back to retrieval](/assets/img/posts/rocq-workflow.png)
 
 The workflow has three stages:
 
@@ -157,7 +163,7 @@ The agentic setup runs on [petanque](https://github.com/ejgallego/coq-lsp/tree/m
 
 The numerical part is a clean lesson: floating-point integration is not certified computation. The Interval tactic closes that gap, at the cost of computation time and the need to formalize the problem definition. Worth it when correctness matters — in verification, in aerospace, in any domain where "it looks right" is not enough.
 
-The analytic proof is less interesting on its own — it is mostly mechanical algebra — but becomes interesting when the LLM handles the bookkeeping and Rocq checks every step. The formal structure forces you to be precise about what you are actually claiming: not "F is an antiderivative of f" but `is_derive F x (f x)`, with every side condition spelled out.
+The analytic proof is mostly mechanical algebra — derivative lemmas, chain rule, fundamental theorem. That is exactly the kind of work an LLM is good at: repetitive, structured, prone to small errors that a checker can catch. The formal proof context forces precision that informal mathematics doesn't require: not "F is an antiderivative of f" but `is_derive F x (f x)`, every denominator side condition named and proved. The LLM fills in that detail; Rocq enforces it.
 
 The part that connects most directly to my own work is the retriever. A semantic search engine over formal mathematics is doing exactly what a retrieval-augmented system does over text documents: convert a description into a vector, find nearby objects in the library, surface them as context. The difference is that "nearby" here means "formally related to the proof goal," and the generation step is checked by a kernel rather than evaluated by a human. That's a materially stronger notion of correctness than anything available in text retrieval — but the retrieval problem is structurally the same.
 
