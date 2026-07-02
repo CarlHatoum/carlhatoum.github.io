@@ -28,8 +28,8 @@ Co-author: *Spatial Organization of Immune Cells in Tumor and Microenvironment P
 - Application domains: Industry, Aeronautics, Health
 
 **Teaching Assistant — Télécom Saint-Étienne** *(2023 – present)*
-- Courses: Machine Learning, NLP, Data Structures & Algorithms (C/C++), Numerical Methods
-- Developed materials and supervised student projects on Retrieval-Augmented Generation
+- Courses: Semantic Search & RAG, Machine Learning, NLP, Data Structures & Algorithms (C/C++), Numerical Methods
+- Supervised student research on NLP for clinical document structuring (CleanNote, PFIA 2025)
 
 **Software Engineer — e-Totem** *(2022 – 2023)*
 - Software development for electric mobility infrastructure
@@ -44,7 +44,7 @@ Co-author: *Spatial Organization of Immune Cells in Tumor and Microenvironment P
 
 ## Publications
 
-4 peer-reviewed international publications at EANN, ISMIS, CORIA — knowledge extraction, representation learning, topic modeling, human-in-the-loop AI, and information retrieval for industrial data.
+Peer-reviewed publications at EANN, ISMIS, CORIA, and PFIA — knowledge extraction, representation learning, topic modeling, human-in-the-loop AI, and information retrieval for industrial data.
 
 ---
 

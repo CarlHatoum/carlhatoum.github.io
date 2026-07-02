@@ -1,7 +1,6 @@
 ---
 title: "Call by Name: An Evaluation Problem"
 date: 2019-01-17 00:00:00 +0100
-categories: [Writing]
 tags: [programming, functional-programming, evaluation-strategies, computer-science]
 ---
 

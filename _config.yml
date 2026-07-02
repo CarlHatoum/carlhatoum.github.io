@@ -38,6 +38,8 @@ toc: true
 comments:
   provider: false
 
+permalink: /posts/:title/
+
 paginate: 10
 paginate_path: /page:num/
 

@@ -11,13 +11,13 @@ A mix of research platforms, open-source tools, and side experiments.
 ---
 
 ### [CleanNote](https://github.com/CarlHatoum/CleanNote)
-NLP pipeline that transforms raw clinical notes into structured JSON documents — symptoms, medical conclusions, treatments — using a local LLM (Mistral-7B-Instruct). Built during a research internship at the Hubert Curien Laboratory. Published at PFIA 2025 and available as an open-source Python package.
+NLP pipeline that transforms raw clinical notes into structured JSON documents — symptoms, medical conclusions, treatments — using a local LLM (Mistral-7B-Instruct). Student project I supervised at the Hubert Curien Laboratory. Published at PFIA 2025 and available as an open-source Python package.
 
 ```bash
 pip install -U cleanote
 ```
 
-[GitHub](https://github.com/CarlHatoum/CleanNote) · [PyPI](https://pypi.org/project/cleanote/) · [Write-up](/writing/2025/07/01/cleannote-medical-nlp.html)
+[GitHub](https://github.com/CarlHatoum/CleanNote) · [PyPI](https://pypi.org/project/cleanote/) · [Write-up](/posts/cleannote-medical-nlp/)
 
 ---
 

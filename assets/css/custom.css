@@ -10,9 +10,8 @@ main h3 {
   color: #d4875c;
 }
 
-/* Tag links */
-.post-tag a,
-a.tag {
+/* Tags */
+a.post-tag {
   color: #b85a25 !important;
 }
 
