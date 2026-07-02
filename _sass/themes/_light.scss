@@ -8,10 +8,10 @@
   --text-color: #34343c;
   --text-muted-color: #757575;
   --text-muted-highlight-color: inherit;
-  --heading-color: #2a2a2a;
+  --heading-color: #1e2a2e;
   --label-color: #585858;
-  --blockquote-border-color: #eeeeee;
-  --blockquote-text-color: #757575;
+  --blockquote-border-color: #d4875c;  /* terracotta */
+  --blockquote-text-color: #5a5a5a;
   --link-color: #2b7a8e;            /* teal accent — was #0056b2 */
   --link-underline-color: #dee2e6;
   --button-bg: #ffffff;
@@ -86,11 +86,11 @@
   --prompt-danger-bg: rgb(248 215 218 / 56%);
   --prompt-danger-icon-color: #df3c30;
 
-  /* tags — warm accent */
-  --tag-border: #e8c8b8;
-  --tag-shadow: #f0ddd4;
-  --tag-hover: #f0ddd4;
-  --search-tag-bg: #fdf6f3;
+  /* tags — teal accent */
+  --tag-border: #c9e0e6;
+  --tag-shadow: #dff0f4;
+  --tag-hover: #dff0f4;
+  --search-tag-bg: #f0f8fa;
 
   /* categories */
   --categories-border: rgb(0 0 0 / 12.5%);
@@ -98,8 +98,8 @@
   --categories-icon-hover-color: darkslategray;
 
   /* timeline */
-  --timeline-color: rgb(0 0 0 / 7.5%);
-  --timeline-node-bg: #c2c6cc;
+  --timeline-color: rgb(43 122 142 / 20%);  /* teal */
+  --timeline-node-bg: #2b7a8e;
   --timeline-year-dot-color: #ffffff;
 
   /* code */

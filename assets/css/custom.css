@@ -1,0 +1,23 @@
+/* Teal left-border accent on h2 in content */
+main h2 {
+  border-left: 3px solid #2b7a8e;
+  padding-left: 0.65rem;
+  margin-left: -0.65rem;
+}
+
+/* Terracotta h3 */
+main h3 {
+  color: #d4875c;
+}
+
+/* Tag links teal */
+.post-tag a,
+a.tag {
+  color: #2b7a8e !important;
+}
+
+/* Post list category links */
+.categories a,
+.post-preview .categories a {
+  color: #2b7a8e;
+}
