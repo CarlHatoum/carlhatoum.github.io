@@ -2,6 +2,7 @@
 title: "CleanNote: Structuring Raw Clinical Notes with a Local LLM"
 date: 2025-07-01 00:00:00 +0200
 tags: [nlp, healthcare, llm, information-extraction, open-source]
+description: "How we used Mistral-7B-Instruct to transform raw clinical notes into structured JSON — extracting symptoms, diagnoses, and treatments locally, without external APIs. Published at PFIA 2025."
 ---
 
 Clinical notes are among the richest — and messiest — sources of medical information. A physician writes what they observe, conclude, and prescribe, but in free text: abbreviations, fragments, mixed languages, no fixed structure. This makes clinical notes extremely hard to use at scale for research or analysis.

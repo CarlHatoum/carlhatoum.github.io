@@ -2,6 +2,7 @@
 title: "Call by Name: An Evaluation Problem"
 date: 2019-01-17 00:00:00 +0100
 tags: [programming, functional-programming, evaluation-strategies, computer-science]
+description: "An explanation of call-by-name evaluation in functional programming — when arguments are evaluated lazily rather than eagerly, why it matters, and where it appears in real languages."
 ---
 
 In computer science, programming languages are standardized notations that allow us to describe very precisely a set of instructions for a computer to execute. Languages differ from one another by their semantics, their syntax, and their paradigm.

@@ -16,7 +16,7 @@ I've published at EANN, ISMIS, CORIA, and PFIA. I also teach graduate courses on
 
 ---
 
-**Application domains:** Industry · Aeronautics · Health
+I work on domains where extracted knowledge directly informs decisions: industrial maintenance and manufacturing, aviation safety, and healthcare.
 
 ---
 

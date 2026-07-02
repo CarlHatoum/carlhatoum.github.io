@@ -1,0 +1,13 @@
+---
+layout: page
+---
+
+<div id="writing">
+  {% for post in site.posts %}
+  <div style="margin-bottom: 2.2rem; padding-bottom: 2.2rem; border-bottom: 1px solid var(--main-border-color);">
+    <a href="{{ post.url | relative_url }}" style="font-size: 1.05rem; font-weight: 600; color: var(--heading-color); text-decoration: none;">{{ post.title }}</a>
+    <div style="font-size: 0.8rem; color: var(--text-muted-color); margin-top: 0.35rem; margin-bottom: 0.55rem; letter-spacing: 0.03em;">{{ post.date | date: '%B %-d, %Y' }}</div>
+    <p style="font-size: 0.9rem; color: var(--post-list-text-color); margin: 0; line-height: 1.75;">{{ post.excerpt | strip_html | truncate: 220 }}</p>
+  </div>
+  {% endfor %}
+</div>

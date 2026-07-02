@@ -6,7 +6,7 @@ order: 4
 permalink: /publications/
 ---
 
-Peer-reviewed publications at EANN, ISMIS, CORIA, and PFIA, on knowledge extraction, representation learning, topic modeling, human-in-the-loop AI, and information retrieval applied to industrial data. EANN and ISMIS papers available on request.
+Publications on knowledge extraction, representation learning, topic modeling, human-in-the-loop AI, and information retrieval applied to industrial and clinical data.
 
 ---
 
@@ -34,6 +34,3 @@ NLP pipeline transforming raw clinical notes into structured documents using a l
 *(co-author — EPFL)*  
 Spatial image analysis of tumor tissue for predicting immunotherapy response.
 
----
-
-*Full list available on request.*

@@ -8,13 +8,17 @@ layout: page
   </p>
 </div>
 
-{% assign latest = site.posts | first %}
-{% if latest %}
-<div style="margin-bottom: 2.5rem; padding-left: 1rem; border-left: 3px solid var(--link-color);">
-  <p style="font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted-color); margin-bottom: 0.5rem;">Recent writing</p>
-  <a href="{{ latest.url }}" style="font-size: 1.05rem; font-weight: 600; color: var(--heading-color); text-decoration: none;">{{ latest.title }}</a>
-  <p style="font-size: 0.9rem; color: var(--text-muted-color); margin-top: 0.4rem; line-height: 1.6;">{{ latest.excerpt | strip_html | truncate: 180 }}</p>
-  <a href="{{ latest.url }}" style="font-size: 0.85rem; color: var(--link-color);">Read →</a>
+{% assign recent = site.posts | limit: 3 %}
+{% if recent.size > 0 %}
+<div style="margin-bottom: 2.5rem;">
+  <p style="font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted-color); margin-bottom: 1.2rem;">Recent writing</p>
+  {% for post in recent %}
+  <div style="padding-left: 1rem; border-left: 3px solid var(--link-color); margin-bottom: 1.6rem;">
+    <a href="{{ post.url }}" style="font-size: 1.05rem; font-weight: 600; color: var(--heading-color); text-decoration: none;">{{ post.title }}</a>
+    <p style="font-size: 0.8rem; color: var(--text-muted-color); margin-top: 0.25rem; margin-bottom: 0.4rem;">{{ post.date | date: '%B %-d, %Y' }}</p>
+    <p style="font-size: 0.9rem; color: var(--text-muted-color); margin: 0; line-height: 1.6;">{{ post.excerpt | strip_html | truncate: 160 }}</p>
+  </div>
+  {% endfor %}
 </div>
 {% endif %}
 
