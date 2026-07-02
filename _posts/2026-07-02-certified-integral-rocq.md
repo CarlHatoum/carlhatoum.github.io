@@ -116,7 +116,7 @@ The proof has a predictable structure:
 4. `f_continuous`: $f$ is continuous (required by the FTC)
 5. `I_closed_form_correct`: $I = F(1) - F(0)$ (by `is_RInt_derive` + `is_RInt_unique`)
 
-![Proof dependency tree: I_closed_form_correct at the root, F_derivative and f_continuous as its two obligations, the three derivative lemmas below, and sech_denominator_nonzero / exp_plus / auto_derive at the leaves](/assets/img/posts/rocq-proof-tree.png)
+![The Retrieve → LLM → Rocq pipeline, with a reject → refine feedback loop back to retrieval](/assets/img/posts/rocq-workflow.png)
 
 Each derivative lemma follows the same template. The `auto_derive` tactic (from Coquelicot) handles differentiability and leaves behind equational side conditions. These require `exp_plus` to rewrite doubled arguments (Rocq's `exp (2*u)` needs to become `exp(u) * exp(u)` to match the sech definition), then `field` and `nra` for the arithmetic. The only recurring annoyance is the denominator: you need to prove `exp(u) + 1 ≠ 0` in several places. The right move is to prove it once as a reusable lemma:
 
@@ -137,7 +137,7 @@ Three lines. Then every derivative proof can reference it directly.
 
 The proofs above were not written by hand. The LLM assembled them — tactic by tactic, lemma by lemma — from a description of the proof goal and a small set of retrieved library facts. The interesting question is not whether it can do this at all, but *how* you structure the interaction to make it reliable.
 
-![The Retrieve → LLM → Rocq pipeline, with a reject → refine feedback loop back to retrieval](/assets/img/posts/rocq-workflow.png)
+![Proof dependency tree: I_closed_form_correct at the root, F_derivative and f_continuous as its two obligations, the three derivative lemmas below, and sech_denominator_nonzero / exp_plus / auto_derive at the leaves](/assets/img/posts/rocq-proof-tree.png)
 
 The workflow has three stages:
 
