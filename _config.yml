@@ -4,7 +4,7 @@ lang: en
 timezone: Europe/Paris
 
 title: Carl Hatoum
-tagline: AI & Data Scientist · PhD candidate in ML, NLP & IR
+tagline: making sense of what wasn't written to be read
 description: >-
   Carl Hatoum — PhD candidate at Université Jean Monnet Saint-Étienne and AI & Data Scientist at SEGULA Technologies.
   Research on knowledge extraction, topic modeling, and NLP applied to industrial and clinical document collections.
@@ -30,7 +30,7 @@ analytics:
 
 theme_mode: # leave empty to follow system preference
 
-avatar: /assets/img/avatar.jpg
+avatar: /assets/img/sidebar-logo.svg
 
 toc: true
 

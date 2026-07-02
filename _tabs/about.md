@@ -6,6 +6,11 @@ order: 2
 permalink: /about/
 ---
 
+<div style="text-align: center; margin-bottom: 2rem;">
+  <img src="/assets/img/avatar.jpg" alt="Carl Hatoum"
+       style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 2px solid var(--main-border-color);">
+</div>
+
 I'm a PhD candidate at [Université Jean Monnet Saint-Étienne](https://www.univ-st-etienne.fr), where my thesis — *Knowledge Extraction for Industry: A Representation-Driven Topic Modeling Approach* — tries to answer a question that feels both practical and genuinely hard: how do you extract meaningful knowledge from the kind of messy, heterogeneous document collections that real industrial organizations actually have?
 
 In parallel, I work as an AI & Data Scientist at [SEGULA Technologies](https://www.segula.fr), where I work on knowledge extraction from large industrial document collections — combining retrieval, clustering, and summarization at scale. The applied side keeps the research honest.

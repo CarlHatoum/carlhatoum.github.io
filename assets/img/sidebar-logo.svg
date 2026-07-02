@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="50" fill="#1e2a2e"/>
+  <!-- Hull -->
+  <path d="M17 63 C22 56, 78 56, 83 63 C78 71, 22 71, 17 63 Z" fill="#c47245"/>
+  <!-- Ram/prow pointing right -->
+  <path d="M82 61 L93 58 L84 67 Z" fill="#c47245"/>
+  <!-- Mast -->
+  <line x1="45" y1="56" x2="45" y2="30" stroke="#c47245" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- Sail billowing right -->
+  <path d="M45 32 L67 39 L65 53 L45 56 Z" fill="#c47245" opacity="0.85"/>
+  <!-- Wave -->
+  <path d="M20 76 Q32 73 44 76 Q56 79 68 76 Q76 73 82 76"
+        stroke="#8fa8ad" stroke-width="1.2" fill="none" opacity="0.55"/>
+</svg>
