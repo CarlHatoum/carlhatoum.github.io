@@ -30,7 +30,7 @@ analytics:
 
 theme_mode: # leave empty to follow system preference
 
-avatar: /assets/img/sidebar-logo.svg
+avatar: /assets/img/sidebar-logo.png
 
 toc: true
 
