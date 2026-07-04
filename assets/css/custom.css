@@ -44,14 +44,22 @@ hr {
   margin-bottom: 2.4rem;
 }
 
-/* Larger sidebar avatar */
+/* Sidebar logo: show plain image, no circle crop */
 #avatar {
   width: 180px !important;
-  height: 180px !important;
+  height: auto !important;
+  border-radius: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  background: none !important;
 }
 
 #avatar img {
   width: 180px !important;
-  height: 180px !important;
+  height: auto !important;
   max-width: 180px !important;
+  border-radius: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  object-fit: unset !important;
 }
