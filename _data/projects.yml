@@ -1,0 +1,50 @@
+- title: CleanNote
+  url: https://github.com/CarlHatoum/CleanNote
+  domain: "NLP · Healthcare"
+  icon: fa-stethoscope
+  color: "#c47245"
+  description: >
+    NLP pipeline that transforms raw clinical notes into structured JSON — symptoms, diagnoses, treatments — using a local LLM (Mistral-7B-Instruct).
+    Supervised student project at Hubert Curien Laboratory. Published at PFIA 2025.
+  links:
+    - label: GitHub
+      url: https://github.com/CarlHatoum/CleanNote
+    - label: PyPI
+      url: https://pypi.org/project/cleanote/
+    - label: Write-up
+      url: /posts/cleannote-medical-nlp/
+
+- title: LDPC Error-Correcting Code
+  url: https://github.com/carlhatoum/LDPC
+  domain: Communications
+  icon: fa-tower-broadcast
+  color: "#3d6b7a"
+  description: >
+    MATLAB implementation of Low-Density Parity-Check error-correction algorithms, including belief propagation decoding over sparse factor graphs.
+    LDPC codes underpin modern communication standards: Wi-Fi, 5G, DVB.
+  links:
+    - label: GitHub
+      url: https://github.com/carlhatoum/LDPC
+
+- title: RL with OpenAI Gym
+  url: https://github.com/carlhatoum/reincorcement-learning-OpenAI-Gym
+  domain: Reinforcement Learning
+  icon: fa-gamepad
+  color: "#5a7a4a"
+  description: >
+    RL agents across classic control tasks in OpenAI Gym — implementing and comparing policy gradient, Q-learning, and actor-critic approaches.
+  links:
+    - label: GitHub
+      url: https://github.com/carlhatoum/reincorcement-learning-OpenAI-Gym
+
+- title: Spotify Top 50 Analysis
+  url: https://github.com/carlhatoum/Spotify-TOP-50-songs
+  domain: Data Visualization
+  icon: fa-chart-bar
+  color: "#6b5b7a"
+  description: >
+    Data analysis and visualization of Spotify's Top 50 — audio features (tempo, energy, danceability, valence) and cross-feature correlations.
+    Built with R and ggplot2.
+  links:
+    - label: GitHub
+      url: https://github.com/carlhatoum/Spotify-TOP-50-songs

@@ -19,6 +19,18 @@ Before this, I spent time at [EPFL](https://www.epfl.ch) co-authoring work on pr
 
 I've published at EANN, ISMIS, CORIA, and PFIA. I also teach graduate courses on semantic search and retrieval-augmented generation at Télécom Saint-Étienne.
 
+<div class="domains-section">
+  <p class="domains-label">Research domains</p>
+  <div class="domains-chips">
+    <span class="domain-chip domain-chip--primary"><i class="fas fa-language" aria-hidden="true"></i> NLP &amp; Text</span>
+    <span class="domain-chip"><i class="fas fa-microscope" aria-hidden="true"></i> Spatial Imaging</span>
+    <span class="domain-chip"><i class="fas fa-chart-line" aria-hidden="true"></i> Physiological Signals</span>
+    <span class="domain-chip"><i class="fas fa-gamepad" aria-hidden="true"></i> Reinforcement Learning</span>
+    <span class="domain-chip"><i class="fas fa-chart-area" aria-hidden="true"></i> Data Visualization</span>
+    <span class="domain-chip"><i class="fas fa-code-branch" aria-hidden="true"></i> Error-Correcting Codes</span>
+  </div>
+</div>
+
 ---
 
 I work on domains where extracted knowledge directly informs decisions: industrial maintenance and manufacturing, aviation safety, and healthcare.

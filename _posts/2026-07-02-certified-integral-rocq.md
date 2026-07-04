@@ -3,6 +3,9 @@ title: "An LLM, Rocq, and an Integral Mathematica Gets Wrong"
 date: 2026-07-02 00:00:00 +0200
 tags: [formal-methods, rocq, numerical-analysis, llm, proof-assistant, mathematics]
 math: true
+image:
+  path: /assets/img/posts/rocq-workflow.png
+  alt: "LLM-assisted Rocq proof pipeline"
 description: "An LLM proposes proof steps, a retrieval engine finds relevant lemmas, and Rocq's kernel decides what counts as valid. Notes from Théo Stoskopf's workshop at the AI, Proof and Formalization Days — using LLM-assisted formal verification on an integral that floating-point tools consistently get wrong."
 ---
 

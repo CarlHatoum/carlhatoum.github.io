@@ -44,6 +44,171 @@ hr {
   margin-bottom: 2.4rem;
 }
 
+/* ============================================================
+   Post list: thumbnail layout (writing.html)
+   ============================================================ */
+
+.post-thumb-row {
+  display: flex;
+  gap: 1.1rem;
+  align-items: flex-start;
+}
+
+.post-thumb-link {
+  flex-shrink: 0;
+}
+
+.post-thumb {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid var(--main-border-color);
+  display: block;
+}
+
+.post-thumb-text {
+  flex: 1;
+  min-width: 0;
+}
+
+/* ============================================================
+   Projects: card grid (_tabs/projects.md)
+   ============================================================ */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.4rem;
+  margin-top: 1.8rem;
+}
+
+.project-card {
+  background: var(--card-bg);
+  border: 1px solid var(--main-border-color);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: box-shadow 0.18s ease, transform 0.18s ease;
+}
+
+.project-card:hover {
+  background: var(--card-hover-bg);
+  box-shadow: 0 4px 16px rgb(0 0 0 / 8%);
+  transform: translateY(-2px);
+}
+
+.project-card-header {
+  padding: 1rem 1.2rem 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: #fff;
+}
+
+.project-card-header i {
+  font-size: 1.15rem;
+  opacity: 0.92;
+}
+
+.domain-badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.92;
+}
+
+.project-card-body {
+  padding: 1rem 1.2rem 1.1rem;
+}
+
+.project-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.55rem;
+  color: var(--heading-color);
+}
+
+.project-title a {
+  color: var(--heading-color);
+  text-decoration: none;
+}
+
+.project-title a:hover {
+  color: var(--link-color);
+}
+
+.project-card-body p {
+  font-size: 0.875rem;
+  color: var(--post-list-text-color);
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+}
+
+.project-links {
+  font-size: 0.82rem;
+}
+
+.project-links a {
+  color: var(--link-color);
+}
+
+/* ============================================================
+   About: research domains chips (_tabs/about.md)
+   ============================================================ */
+
+.domains-section {
+  margin: 1.6rem 0;
+}
+
+.domains-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted-color);
+  margin-bottom: 0.65rem !important;
+}
+
+.domains-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.domain-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  background: var(--card-bg);
+  border: 1px solid var(--main-border-color);
+  color: var(--heading-color);
+  line-height: 1.4;
+}
+
+.domain-chip i {
+  font-size: 0.78rem;
+  opacity: 0.8;
+}
+
+.domain-chip--primary {
+  background: #c47245;
+  border-color: #c47245;
+  color: #fff;
+}
+
+.domain-chip--primary i {
+  opacity: 1;
+}
+
+/* ============================================================
+   Sidebar logo: show plain image, no circle crop
+   ============================================================ */
+
 /* Sidebar logo: show plain image, no circle crop */
 #avatar {
   width: 180px !important;
