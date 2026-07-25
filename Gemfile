@@ -7,7 +7,7 @@ group :test do
   gem "html-proofer", "~> 5.0"
 end
 
-platforms :windows, :jruby do
+platforms :mswin, :x64_mingw, :jruby do
   gem "tzinfo", ">= 1", "< 3"
   gem "tzinfo-data"
 end

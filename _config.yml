@@ -21,12 +21,16 @@ social:
   links:
     - https://www.linkedin.com/in/carlhatoum
     - https://github.com/carlhatoum
+    - https://scholar.google.com/citations?user=-3I8NpMAAAAJ&hl=fr&oi=ao
+    - https://orcid.org/0009-0003-4784-5051
 
 webmaster_verifications:
   google: I6yJnf5RpPzeY3Z_vp8mu2juEPnC6RffppTovP1eLfY
 
 analytics:
-  provider: false
+  provider: google
+  google:
+    id: G-XXXXXXXXXX  # TODO: replace with real GA4 measurement ID
 
 theme_mode: # leave empty to follow system preference
 
