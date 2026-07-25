@@ -2,11 +2,25 @@
 layout: page
 title: Publications
 icon: fas fa-book
-order: 4
+order: 3
 permalink: /publications/
 ---
 
 Publications on knowledge extraction, representation learning, topic modeling, human-in-the-loop AI, and information retrieval applied to industrial and clinical data.
+
+---
+
+### 2026
+
+**Knowledge Extraction from Aviation Incident Reports via LLM Aspect-Based Summarization and Topic Modeling**  
+Hatoum, C., Combes, C., Burnaz-Fresse, V., Gravier, C., & Orzalesi, M.  
+*ISMIS 2026 — International Symposium on Methodologies for Intelligent Systems. Pages 151–165.*
+
+---
+
+**Constructivist Summarization Meets Realist Clustering: A Hybrid Framework for Aviation Incident Knowledge Extraction**  
+Hatoum, C., Combes, C., Burnaz-Fresse, V., Gravier, C., & Orzalesi, M.  
+*EANN 2026 — International Conference on Engineering Applications of Neural Networks. Pages 184–195.*
 
 ---
 
