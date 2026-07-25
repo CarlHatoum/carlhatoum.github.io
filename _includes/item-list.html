@@ -1,0 +1,22 @@
+{% for item in include.items %}
+<div class="item-row">
+  {% if item.image and item.image.path %}
+  <div class="item-thumb-row">
+    <a href="{{ item.url | relative_url }}" class="item-thumb-link">
+      <img src="{{ item.image.path | relative_url }}" alt="{{ item.title }}" class="item-thumb">
+    </a>
+    <div class="item-thumb-text">
+      <a href="{{ item.url | relative_url }}" class="item-title">{{ item.title }}</a>
+      <div class="item-meta">{% if item.date %}{{ item.date | date: '%B %-d, %Y' }}{% endif %}{% if item.domain %}{{ item.domain }}{% endif %}</div>
+      <p class="item-excerpt">{% if item.excerpt %}{{ item.excerpt | strip_html | truncate: 220 }}{% else %}{{ item.description }}{% endif %}</p>
+      {% if item.links %}<div class="item-links">{% for link in item.links %}{% unless forloop.first %} &middot; {% endunless %}<a href="{{ link.url }}">{{ link.label }}</a>{% endfor %}</div>{% endif %}
+    </div>
+  </div>
+  {% else %}
+  <a href="{{ item.url | relative_url }}" class="item-title">{{ item.title }}</a>
+  <div class="item-meta">{% if item.date %}{{ item.date | date: '%B %-d, %Y' }}{% endif %}{% if item.domain %}{{ item.domain }}{% endif %}</div>
+  <p class="item-excerpt">{% if item.excerpt %}{{ item.excerpt | strip_html | truncate: 220 }}{% else %}{{ item.description }}{% endif %}</p>
+  {% if item.links %}<div class="item-links">{% for link in item.links %}{% unless forloop.first %} &middot; {% endunless %}<a href="{{ link.url }}">{{ link.label }}</a>{% endfor %}</div>{% endif %}
+  {% endif %}
+</div>
+{% endfor %}

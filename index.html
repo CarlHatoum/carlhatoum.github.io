@@ -13,16 +13,7 @@ title: Home
 {% if recent.size > 0 %}
 <div style="margin-bottom: 2.5rem;">
   <p style="font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted-color); margin-bottom: 1.2rem;">Recent writing</p>
-  {% include post-list.html posts=recent %}
+  {% include item-list.html items=recent %}
   <a href="/writing/" style="font-size: 0.85rem; color: var(--link-color);">More writing &rarr;</a>
 </div>
 {% endif %}
-
-<div style="font-size: 0.9rem; color: var(--text-muted-color);">
-  <a href="/about/" style="color: var(--link-color); margin-right: 1.2rem;">About</a>
-  <a href="/cv/" style="color: var(--link-color); margin-right: 1.2rem;">CV</a>
-  <a href="/publications/" style="color: var(--link-color); margin-right: 1.2rem;">Publications</a>
-  <a href="/projects/" style="color: var(--link-color); margin-right: 1.2rem;">Projects</a>
-  <a href="/teaching/" style="color: var(--link-color); margin-right: 1.2rem;">Teaching</a>
-  <a href="/personal/" style="color: var(--link-color);">Personal</a>
-</div>
