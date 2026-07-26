@@ -110,58 +110,6 @@ hr {
 }
 
 /* ============================================================
-   About: research domains chips (_tabs/about.md)
-   ============================================================ */
-
-.domains-section {
-  margin: 1.6rem 0;
-}
-
-.domains-label {
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--text-muted-color);
-  margin-bottom: 0.65rem !important;
-}
-
-.domains-chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.domain-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  padding: 0.3rem 0.75rem;
-  border-radius: 20px;
-  font-size: 0.82rem;
-  font-weight: 500;
-  background: var(--card-bg);
-  border: 1px solid var(--main-border-color);
-  color: var(--heading-color);
-  line-height: 1.4;
-}
-
-.domain-chip i {
-  font-size: 0.78rem;
-  opacity: 0.8;
-}
-
-.domain-chip--primary {
-  background: #c47245;
-  border-color: #c47245;
-  color: #fff;
-}
-
-.domain-chip--primary i {
-  opacity: 1;
-}
-
-/* ============================================================
    Sidebar logo: show plain image, no circle crop
    ============================================================ */
 

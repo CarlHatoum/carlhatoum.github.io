@@ -31,8 +31,8 @@
     "Large Language Models"
   ],
   "sameAs": [
-    "https://www.linkedin.com/in/carlhatoum",
-    "https://github.com/carlhatoum"
+    {% for link in site.social.links %}"{{ link }}"{% unless forloop.last %},{% endunless %}
+    {% endfor %}
   ]
 }
 </script>

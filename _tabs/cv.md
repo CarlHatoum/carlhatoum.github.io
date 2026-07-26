@@ -48,16 +48,6 @@ Peer-reviewed publications at EANN, ISMIS, CORIA, and PFIA — knowledge extract
 
 ---
 
-## Scientific Contributions
-
-- Reviewer for scientific conferences
-- Dataset design and annotation protocol development
-- Human evaluation and user studies
-- Open source contributions
-- Supervision of student research and engineering projects
-
----
-
 ## Skills
 
 **Machine Learning** — Classification, Clustering, Representation Learning, Unsupervised Learning, Feature Engineering
