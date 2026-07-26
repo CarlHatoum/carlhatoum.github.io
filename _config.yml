@@ -30,7 +30,7 @@ webmaster_verifications:
 analytics:
   provider: google
   google:
-    id: G-XXXXXXXXXX  # TODO: replace with real GA4 measurement ID
+    id: G-ZT03YQV5MW
 
 theme_mode: # leave empty to follow system preference
 
