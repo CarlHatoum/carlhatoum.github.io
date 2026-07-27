@@ -7,7 +7,7 @@ permalink: /about/
 ---
 
 <div style="text-align: center; margin-bottom: 2rem;">
-  <img src="/assets/img/sidebar-logo.png" alt="Carl Hatoum"
+  <img src="/assets/img/avatar.jpg" alt="Carl Hatoum"
        style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 2px solid var(--main-border-color);">
 </div>
 
