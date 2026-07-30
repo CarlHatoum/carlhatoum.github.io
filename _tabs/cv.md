@@ -13,8 +13,7 @@ Thesis: *Knowledge Extraction for Industry: A Representation-Driven Topic Modeli
 Topics: Knowledge Extraction, Representation Learning, Topic Modeling, Human-in-the-Loop AI, Information Retrieval applied to industrial data.
 
 **M.Sc. in Computer Science** — EPFL, École Polytechnique Fédérale de Lausanne *(2020 – 2021)*
-Research: spatial image analysis of tumor tissue for immunotherapy response prediction.
-Co-author: *Spatial Organization of Immune Cells in Tumor and Microenvironment Predicts Checkpoint Inhibitor Response in Advanced Melanoma.*
+Research: spatial image analysis of tumor tissue for immunotherapy response prediction, co-authoring a peer-reviewed publication (see Publications).
 
 **Diplôme d'Ingénieur — Telecommunications, Networks & Computer Science** — INSA Lyon
 
@@ -44,7 +43,7 @@ Co-author: *Spatial Organization of Immune Cells in Tumor and Microenvironment P
 
 ## Publications
 
-Peer-reviewed publications at EANN, ISMIS, CORIA, and PFIA — knowledge extraction, representation learning, topic modeling, human-in-the-loop AI, and information retrieval for industrial data.
+Peer-reviewed publications on knowledge extraction, representation learning, topic modeling, human-in-the-loop AI, and information retrieval for industrial data — see the [Publications](/publications/) page for the full list.
 
 ---
 

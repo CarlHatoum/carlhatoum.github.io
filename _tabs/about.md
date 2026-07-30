@@ -17,7 +17,7 @@ In parallel, I work as an AI & Data Scientist at [SEGULA Technologies](https://w
 
 Before this, I spent time at [EPFL](https://www.epfl.ch) co-authoring work on predicting immunotherapy response from the spatial organization of immune cells in tumors, and at Biosency on physiological time series for respiratory monitoring.
 
-I've published at EANN, ISMIS, CORIA, and PFIA. I also teach graduate courses on semantic search and retrieval-augmented generation at Télécom Saint-Étienne.
+I've published in peer-reviewed AI/NLP venues (see [Publications](/publications/)). I also teach graduate courses on semantic search and retrieval-augmented generation at Télécom Saint-Étienne.
 
 ---
 
