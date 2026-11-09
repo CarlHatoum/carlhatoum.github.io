@@ -99,7 +99,11 @@ To find out what the tools contribute, I ran three variants of the same model (Q
 
 Reading the two documents helps a little, mostly by recognising later versions in the same series. **The tools don't help at all.** A single call without tools makes the same decision as the full agent on 93 of 100 pairs, at a quarter of the cost. The agent dutifully calls `compare` and `find_later` on every pair, but what it finds rarely changes its mind. None of the differences with the cheap scorer is statistically significant at this sample size. Repeated runs at temperature 0.3 move balanced accuracy by about ±0.02, so the conclusion doesn't hinge on one lucky run.
 
-> **Still running:** two experiments that decide where this goes. First, the model on the same pairs with corrupted years: the cheap scorer and recency both collapse when dates are wrong, so does reading the documents hold up? Second, how much of the stale-ranking problem the cascade removes end to end. I'll update this post with both.
+**When the dates are wrong.** I reran the same 100 pairs with half of all years removed or shifted. The cheap scorer dropped from 0.72 to 0.68: it reasons by date, so it starts missing true links. The single model call barely moved (0.76 → 0.74) and made the same decision on 90 of 100 pairs. That's the property a cascade needs: the step that reads doesn't lean on dates.
+
+**What it does to retrieval.** In the cascade, the scorer keeps its verdicts on clear pairs and one model call decides the ambiguous ones. On the test questions, the current version now comes first 67% of the time, against 55% with the scorer alone and 92% with perfect lineage. That's two thirds of the gap closed instead of half: 7 questions fixed for 1 broken. With 49 questions, it isn't statistically significant yet (p = 0.07).
+
+> **Updated 9 November 2026** with the corrupted-years and end-to-end results.
 {: .prompt-info }
 
 ---
